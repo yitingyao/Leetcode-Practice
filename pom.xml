@@ -19,7 +19,7 @@
             <artifactId>junit</artifactId>
             <version>4.13</version>
             <scope>test
-            </scope> <!-- Changed to 'test' to make sure it's only used for testing purposes -->
+            </scope>
         </dependency>
 
         <dependency>
