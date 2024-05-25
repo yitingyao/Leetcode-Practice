@@ -25,9 +25,12 @@ public class TwoSumSolution {
                 return new int[]{complementIndex, i};
             }
 
-            // Stores the current number's index if its complement has not been mapped yet.
-            // The key is the difference between the target and the current number, ensuring it can pair with a future number to meet the target sum.
+            // Stores the index of the current number in the map using the complement (target -
+            // current number) as the key.
+            // This ensures that when a matching number is encountered later, the correct indices
+            // can be quickly retrieved.
             complements.put(target - nums[i], i);
+
 
         }
 
